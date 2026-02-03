@@ -1,0 +1,1178 @@
+[
+  {
+    "name": "App",
+    "path": "App.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "TopBar",
+      "ToastNotification",
+      "Anfitriao",
+      "Bairro",
+      "Casa",
+      "Conta",
+      "Dev",
+      "DevArchitecture",
+      "DocumentationPage",
+      "LandingPage",
+      "NotFound",
+      "Pesquisa",
+      "TreeNode"
+    ]
+  },
+  {
+    "name": "InsightsGrid",
+    "path": "components/InsightsGrid.vue",
+    "props": [
+      "cards",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "InsightsPanel",
+    "path": "components/InsightsPanel.vue",
+    "props": [
+      "title",
+      "type",
+      "default",
+      "description",
+      "type",
+      "default",
+      "imageSrc",
+      "type",
+      "default",
+      "imageAlt",
+      "type",
+      "default",
+      "stats",
+      "type",
+      "default",
+      "ctaLabel",
+      "type",
+      "default",
+      "loading",
+      "type",
+      "default",
+      "locationSlug",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "SignInDropdown",
+    "path": "components/SignInDropdown.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "default",
+      "errorMessage",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "submit",
+      "register"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseButton"
+    ]
+  },
+  {
+    "name": "TopBar",
+    "path": "components/TopBar.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useUserStore",
+      "userStore"
+    ],
+    "composables": [],
+    "children": [
+      "BaseButton",
+      "SignInDropdown",
+      "SettingsOverlay"
+    ]
+  },
+  {
+    "name": "ActionToolbar",
+    "path": "components/common/ActionToolbar.vue",
+    "props": [
+      "isSaved",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "save",
+      "share",
+      "download"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "ControlButton"
+    ]
+  },
+  {
+    "name": "BaseActionInput",
+    "path": "components/common/BaseActionInput.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "default",
+      "readonly",
+      "type",
+      "default",
+      "actionLabel",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "action"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseButton",
+    "path": "components/common/BaseButton.vue",
+    "props": [
+      "text",
+      "type",
+      "default",
+      "variant",
+      "type",
+      "default",
+      "validator",
+      "size",
+      "type",
+      "default",
+      "validator",
+      "disabled",
+      "type",
+      "default",
+      "fullWidth",
+      "type",
+      "default",
+      "type",
+      "type",
+      "default",
+      "as",
+      "type",
+      "default",
+      "href",
+      "type",
+      "default",
+      "target",
+      "type",
+      "default",
+      "rel",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "click"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseCard",
+    "path": "components/common/BaseCard.vue",
+    "props": [
+      "data",
+      "type",
+      "required"
+    ],
+    "emits": [
+      "click"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "BaseChart",
+    "path": "components/common/BaseChart.vue",
+    "props": [
+      "type",
+      "type",
+      "required",
+      "data",
+      "type",
+      "required",
+      "options",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseFrame",
+    "path": "components/common/BaseFrame.vue",
+    "props": [
+      "padding",
+      "type",
+      "default",
+      "elevation",
+      "type",
+      "default",
+      "rounded",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseMap",
+    "path": "components/common/BaseMap.vue",
+    "props": [
+      "objects",
+      "locations",
+      "type",
+      "default",
+      "center",
+      "type",
+      "default",
+      "zoom",
+      "type",
+      "default",
+      "height",
+      "type",
+      "default",
+      "interactive",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseModal",
+    "path": "components/common/BaseModal.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required",
+      "title",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseOptionGroup",
+    "path": "components/common/BaseOptionGroup.vue",
+    "props": [
+      "options",
+      "type",
+      "required",
+      "format",
+      "label",
+      "value",
+      "modelValue",
+      "type",
+      "default",
+      "label",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "BaseSegmentedControl",
+    "path": "components/common/BaseSegmentedControl.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required",
+      "options",
+      "type",
+      "label",
+      "value",
+      "required",
+      "name",
+      "type",
+      "default",
+      "fullWidth",
+      "type",
+      "default",
+      "width",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "ControlButton",
+    "path": "components/common/ControlButton.vue",
+    "props": [
+      "variant",
+      "type",
+      "default",
+      "validator",
+      "size",
+      "type",
+      "default",
+      "validator",
+      "active",
+      "type",
+      "default",
+      "disabled",
+      "type",
+      "default",
+      "withCaret",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "ControlDropDown",
+    "path": "components/common/ControlDropDown.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "default",
+      "options",
+      "type",
+      "default",
+      "buttonLabel",
+      "type",
+      "default",
+      "buttonIcon",
+      "type",
+      "default",
+      "placeholder",
+      "type",
+      "default",
+      "dropdownTitle",
+      "type",
+      "default",
+      "minWidth",
+      "type",
+      "default",
+      "open",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "HostAvatar",
+    "path": "components/common/HostAvatar.vue",
+    "props": [
+      "src",
+      "type",
+      "default",
+      "name",
+      "type",
+      "default",
+      "size",
+      "type",
+      "default",
+      "border",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "StatCard",
+    "path": "components/common/StatCard.vue",
+    "props": [
+      "label",
+      "type",
+      "required",
+      "value",
+      "type",
+      "required",
+      "subtext",
+      "type",
+      "default",
+      "variant",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "ToastNotification",
+    "path": "components/common/ToastNotification.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "DashboardHeader",
+    "path": "components/dashboards/DashboardHeader.vue",
+    "props": [
+      "title",
+      "type",
+      "required",
+      "modelValue",
+      "type",
+      "default",
+      "comparisonOptions",
+      "type",
+      "default",
+      "dropdownMinWidth",
+      "type",
+      "default",
+      "isSaved",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "save",
+      "share",
+      "download"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "ControlDropDown",
+      "ActionToolbar"
+    ]
+  },
+  {
+    "name": "GlobalDashBoard",
+    "path": "components/dashboards/GlobalDashBoard.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "HostAnalytics",
+    "path": "components/dashboards/HostAnalytics.vue",
+    "props": [
+      "listings",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame",
+      "BaseChart"
+    ]
+  },
+  {
+    "name": "HostsDashboard",
+    "path": "components/dashboards/HostsDashboard.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [
+      "useQuickActions"
+    ],
+    "children": [
+      "BaseFrame",
+      "DashboardHeader",
+      "DownloadOverlay",
+      "QuickShareOverlay",
+      "ControlDropDown"
+    ]
+  },
+  {
+    "name": "ListingAnalytics",
+    "path": "components/dashboards/ListingAnalytics.vue",
+    "props": [
+      "listing",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [
+      "useUserStore",
+      "userStore"
+    ],
+    "composables": [
+      "useMarketStats",
+      "useQuickActions"
+    ],
+    "children": [
+      "DashboardHeader",
+      "ControlDropDown",
+      "ScoreCard",
+      "MetricsGrid",
+      "AlignmentCard",
+      "RevenueCard",
+      "DownloadOverlay",
+      "QuickShareOverlay"
+    ]
+  },
+  {
+    "name": "MarketOverview",
+    "path": "components/dashboards/MarketOverview.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [
+      "useQuickActions"
+    ],
+    "children": [
+      "BaseFrame",
+      "BaseChart",
+      "DashboardHeader",
+      "DownloadOverlay",
+      "QuickShareOverlay",
+      "BaseSegmentedControl",
+      "ControlDropDown"
+    ]
+  },
+  {
+    "name": "DocumentationOverlay",
+    "path": "components/dashboards/overlays/DocumentationOverlay.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseModal"
+    ]
+  },
+  {
+    "name": "DownloadOverlay",
+    "path": "components/dashboards/overlays/DownloadOverlay.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required",
+      "defaultFilename",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "download"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseModal",
+      "BaseActionInput",
+      "BaseOptionGroup"
+    ]
+  },
+  {
+    "name": "QuickShareOverlay",
+    "path": "components/dashboards/overlays/QuickShareOverlay.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required",
+      "link",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseModal",
+      "BaseActionInput"
+    ]
+  },
+  {
+    "name": "SettingsOverlay",
+    "path": "components/dashboards/overlays/SettingsOverlay.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseModal",
+      "BaseSegmentedControl"
+    ]
+  },
+  {
+    "name": "AlignmentCard",
+    "path": "components/listing-dashboard/AlignmentCard.vue",
+    "props": [
+      "alignment",
+      "type",
+      "required",
+      "percentiles",
+      "type",
+      "required",
+      "contextLabel",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "MetricsGrid",
+    "path": "components/listing-dashboard/MetricsGrid.vue",
+    "props": [
+      "metrics",
+      "type",
+      "required",
+      "listing",
+      "type",
+      "required",
+      "deviationTable",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "RevenueCard",
+    "path": "components/listing-dashboard/RevenueCard.vue",
+    "props": [
+      "revenueData",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "ScoreCard",
+    "path": "components/listing-dashboard/ScoreCard.vue",
+    "props": [
+      "score",
+      "type",
+      "required",
+      "label",
+      "type",
+      "required",
+      "marketFit",
+      "type",
+      "required",
+      "summary",
+      "type",
+      "required",
+      "contextLabel",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "HostSummaryBar",
+    "path": "components/listing-details/HostSummaryBar.vue",
+    "props": [
+      "host",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "click"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "HostAvatar"
+    ]
+  },
+  {
+    "name": "ListingGallery",
+    "path": "components/listing-details/ListingGallery.vue",
+    "props": [
+      "src",
+      "type",
+      "default",
+      "alt",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "ListingHeader",
+    "path": "components/listing-details/ListingHeader.vue",
+    "props": [
+      "name",
+      "type",
+      "required",
+      "rating",
+      "type",
+      "default",
+      "neighbourhood",
+      "type",
+      "default",
+      "address",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "ListingInfoCard",
+    "path": "components/listing-details/ListingInfoCard.vue",
+    "props": [
+      "listing",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [
+      "useRoomTypeLabel"
+    ],
+    "children": [
+      "BaseFrame"
+    ]
+  },
+  {
+    "name": "FilterMenu",
+    "path": "components/search/FilterMenu.vue",
+    "props": [
+      "open",
+      "type",
+      "default",
+      "houseTypeOptions",
+      "type",
+      "default",
+      "priceStep",
+      "type",
+      "default",
+      "ratingStep",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [
+      "useSearchStore"
+    ],
+    "composables": [
+      "useRoomTypeLabel"
+    ],
+    "children": [
+      "ControlButton",
+      "FilterToggle",
+      "FilterRange"
+    ]
+  },
+  {
+    "name": "ResultsPanel",
+    "path": "components/search/ResultsPanel.vue",
+    "props": [
+      "metaLabel",
+      "type",
+      "default",
+      "resultsCount",
+      "type",
+      "default",
+      "listings",
+      "type",
+      "default",
+      "pageSize",
+      "type",
+      "default",
+      "pageSizeOptions",
+      "type",
+      "default",
+      "pageRangeLabel",
+      "type",
+      "default",
+      "currentPage",
+      "type",
+      "default",
+      "totalPages",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseCard"
+    ]
+  },
+  {
+    "name": "SearchBar",
+    "path": "components/search/SearchBar.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "default",
+      "category",
+      "type",
+      "default"
+    ],
+    "emits": [
+      "search"
+    ],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "SearchControls",
+    "path": "components/search/SearchControls.vue",
+    "props": [
+      "modelValue",
+      "type",
+      "default",
+      "category",
+      "type",
+      "default",
+      "categories",
+      "type",
+      "default",
+      "filterOpen",
+      "type",
+      "default",
+      "sortOpen",
+      "type",
+      "default",
+      "categoryOpen",
+      "type",
+      "default",
+      "sortValue",
+      "type",
+      "default",
+      "sortOptions",
+      "type",
+      "default",
+      "houseTypeOptions",
+      "type",
+      "default",
+      "priceStep",
+      "type",
+      "default",
+      "ratingStep",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "ControlDropDown",
+      "FilterMenu"
+    ]
+  },
+  {
+    "name": "FilterRange",
+    "path": "components/search/filters/FilterRange.vue",
+    "props": [
+      "label",
+      "type",
+      "required",
+      "modelValue",
+      "type",
+      "required",
+      "min",
+      "type",
+      "required",
+      "max",
+      "type",
+      "required",
+      "step",
+      "type",
+      "default",
+      "displayValue",
+      "type",
+      "default"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "FilterToggle",
+    "path": "components/search/filters/FilterToggle.vue",
+    "props": [
+      "label",
+      "type",
+      "required",
+      "modelValue",
+      "type",
+      "required"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  },
+  {
+    "name": "Anfitriao",
+    "path": "views/Anfitriao.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useUserStore",
+      "userStore"
+    ],
+    "composables": [
+      "useMarketStats",
+      "useQuickActions"
+    ],
+    "children": [
+      "BaseButton",
+      "BaseFrame",
+      "BaseCard",
+      "HostAvatar",
+      "DashboardHeader",
+      "HostAnalytics",
+      "MetricsGrid",
+      "ControlDropDown",
+      "BaseMap",
+      "DownloadOverlay",
+      "QuickShareOverlay"
+    ]
+  },
+  {
+    "name": "Bairro",
+    "path": "views/Bairro.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useUserStore",
+      "userStore"
+    ],
+    "composables": [
+      "useQuickActions"
+    ],
+    "children": [
+      "BaseFrame",
+      "BaseButton",
+      "BaseChart",
+      "ControlDropDown",
+      "DashboardHeader",
+      "MetricsGrid",
+      "BaseMap",
+      "DownloadOverlay",
+      "QuickShareOverlay"
+    ]
+  },
+  {
+    "name": "Casa",
+    "path": "views/Casa.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [
+      "useListing",
+      "useHost"
+    ],
+    "children": [
+      "BaseButton",
+      "BaseFrame",
+      "ListingAnalytics",
+      "ListingGallery",
+      "HostSummaryBar",
+      "ListingHeader",
+      "ListingInfoCard",
+      "BaseMap"
+    ]
+  },
+  {
+    "name": "Conta",
+    "path": "views/Conta.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useUserStore",
+      "userStore"
+    ],
+    "composables": [],
+    "children": [
+      "BaseFrame",
+      "BaseCard",
+      "BaseButton"
+    ]
+  },
+  {
+    "name": "Dev",
+    "path": "views/Dev.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseButton",
+      "BaseCard",
+      "BaseFrame",
+      "BaseModal",
+      "BaseChart",
+      "BaseMap",
+      "BaseActionInput",
+      "BaseOptionGroup",
+      "BaseSegmentedControl",
+      "ControlButton",
+      "ControlDropDown",
+      "ActionToolbar",
+      "HostAvatar",
+      "StatCard"
+    ]
+  },
+  {
+    "name": "DevArchitecture",
+    "path": "views/DevArchitecture.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "TreeNode"
+    ]
+  },
+  {
+    "name": "DocumentationPage",
+    "path": "views/DocumentationPage.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseFrame",
+      "ScoreCard"
+    ]
+  },
+  {
+    "name": "LandingPage",
+    "path": "views/LandingPage.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useSearchStore"
+    ],
+    "composables": [],
+    "children": [
+      "MarketOverview",
+      "HostsDashboard",
+      "InsightsGrid",
+      "SearchBar"
+    ]
+  },
+  {
+    "name": "NotFound",
+    "path": "views/NotFound.vue",
+    "props": [],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": [
+      "BaseButton"
+    ]
+  },
+  {
+    "name": "Pesquisa",
+    "path": "views/Pesquisa.vue",
+    "props": [],
+    "emits": [],
+    "stores": [
+      "useSearchStore"
+    ],
+    "composables": [
+      "usePagination",
+      "useDropdowns",
+      "useRoomTypeLabel"
+    ],
+    "children": [
+      "SearchControls",
+      "ResultsPanel",
+      "InsightsPanel",
+      "BaseMap"
+    ]
+  },
+  {
+    "name": "TreeNode",
+    "path": "views/TreeNode.vue",
+    "props": [
+      "node",
+      "allData"
+    ],
+    "emits": [],
+    "stores": [],
+    "composables": [],
+    "children": []
+  }
+]

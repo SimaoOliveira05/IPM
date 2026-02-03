@@ -1,0 +1,116 @@
+/* ==========================================================================
+   TEMA LIGHT (PADRÃO)
+   ========================================================================== */
+:root {
+  /* Primary Base (Dark Navy para texto/elementos no Light) */
+  --primary-rgb: 10, 37, 64;
+  --color-primary: rgba(var(--primary-rgb), 1);
+  
+  /* Gerador de Opacidade para a cor primária (Light Mode) */
+  --color-primary-04: rgba(var(--primary-rgb), 0.04);
+  --color-primary-05: rgba(var(--primary-rgb), 0.05);
+  --color-primary-08: rgba(var(--primary-rgb), 0.08);
+  --color-primary-10: rgba(var(--primary-rgb), 0.1);
+  --color-primary-12: rgba(var(--primary-rgb), 0.12);
+  --color-primary-20: rgba(var(--primary-rgb), 0.2);
+  --color-primary-40: rgba(var(--primary-rgb), 0.4);
+  --color-primary-60: rgba(var(--primary-rgb), 0.6);
+  --color-primary-65: rgba(var(--primary-rgb), 0.65);
+  --color-primary-75: rgba(var(--primary-rgb), 0.75);
+
+  /* Accent (Azul de destaque) */
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-active: #1742b5;
+  --color-accent-light: #3b82f6;
+  --color-accent-10: rgba(37, 99, 235, 0.1);
+  --color-accent-30: rgba(37, 99, 235, 0.3);
+  --color-accent-80: rgba(37, 99, 235, 0.8);
+
+  /* Semantic */
+  --color-success: #16a34a;
+  --color-success-dark: #15803d;
+  --color-success-bg: #dcfce7;
+  --color-success-10: rgba(22, 163, 74, 0.1);
+  --color-warning: #f59e0b;
+  --color-warning-dark: #b45309;
+  --color-warning-bg: #fef3c7;
+  --color-warning-10: rgba(245, 158, 11, 0.1);
+  --color-error: #dc2626;
+  --color-error-dark: #b91c1c;
+  --color-error-bg: #fee2e2;
+  --color-error-10: rgba(220, 38, 38, 0.1);
+
+  /* Cores comuns */
+  --color-white: #ffffff;
+  --color-rating: #2563eb;
+
+  /* Backgrounds Light */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f9fc;
+  --bg-topbar: #f8f9fb;
+  --bg-gradient: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  --bg-accent-gradient: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+
+  /* Text Colors Light */
+  --text-primary: #0a2540;
+  --text-secondary: rgba(var(--primary-rgb), 0.75);
+
+  /* Tokens de borda e raio */
+  --border-color: rgba(var(--primary-rgb), 0.12);
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 999px;
+
+  /* Chart Colors */
+  --chart-point-bg: #ffffff;
+
+  /* Force native elements to use light theme */
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   TEMA DARK (NIGHT BLUE)
+   ========================================================================== */
+[data-theme='dark'] {
+  /* Inversão da Base: Agora a cor "primária" para textos/detalhes é branca/azul clara */
+  --primary-rgb: 226, 232, 240; 
+  --color-primary: #f8fafc;
+
+  /* Backgrounds Night Blue (Evitando o preto puro) */
+  --bg-primary: #0f172a;    /* Azul marinho profundo */
+  --bg-secondary: #1e293b;  /* Azul de superfície (cards) */
+  --bg-topbar: #0b1120;     /* Topbar mais escura */
+  --bg-gradient: linear-gradient(180deg, #0f172a 0%, #0b1120 100%);
+
+  /* Ajuste de Texto */
+  --text-primary: #f8fafc;
+  --text-secondary: rgba(226, 232, 240, 0.7);
+
+  /* Bordas e Sombras no Dark */
+  --border-color: rgba(255, 255, 255, 0.1);
+  
+  /* Ajuste de opacidades para o dark (devem ser mais suaves) */
+  --color-primary-04: rgba(0, 0, 0, 0.15);
+  --color-primary-05: rgba(0, 0, 0, 0.2);
+  --color-primary-08: rgba(0, 0, 0, 0.25);
+  --color-primary-10: rgba(0, 0, 0, 0.3);
+  --color-primary-12: rgba(0, 0, 0, 0.35);
+  --color-primary-20: rgba(0, 0, 0, 0.4);
+
+  /* Accent (Azul levemente mais brilhante para o dark) */
+  --color-accent: #3b82f6;
+  --color-accent-hover: #60a5fa;
+
+  /* Semantic Backgrounds (Ajuste para não "gritarem" no escuro) */
+  --color-success-bg: rgba(22, 163, 74, 0.15);
+  --color-error-bg: rgba(220, 38, 38, 0.15);
+
+  /* Chart Colors */
+  --chart-point-bg: #1e293b;
+
+  /* Force native elements to use dark theme */
+  color-scheme: dark;
+}
