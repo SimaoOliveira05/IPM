@@ -6,16 +6,13 @@ Market analytics and visualization system for local accommodation, developed for
 <table align="center">
   <tr>
     <td align="center">
-      <img src="src/assets/images/hero_analytics_illustration.png" width="750"/>
+      <img src="assets/search.png" width="750"/>
     </td>
     <td align="center">
       <img src="assets/home.png" width="750"/>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="assets/search.png" width="750"/>
-    </td>
     <td align="center">
       <img src="assets/house.png" width="750"/>
     </td>
